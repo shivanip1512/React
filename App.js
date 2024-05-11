@@ -1,12 +1,36 @@
-const heading = React.createElement(
-    'h1',
-    { id: "heading", xyz: "abc" },
-    "Hello World from React!"
+/**
+ * <div id="parent">
+ *      <div id="child">
+ *          <h1>I'm h1 Tag</h1>
+ *          <h2>I'm h2 Tag</h2>
+ *      </div>
+ *      <div id="child2">
+ *          <h1>I'm h1 Tag</h1>
+ *          <h2>I'm h2 Tag</h2>
+ *      </div>
+ * </div>
+ */
+const arrOfheadingTags = [
+    React.createElement('h1', {}, "I'm h1 Tag"),
+    React.createElement('h2', {}, "I'm h2 Tag")
+];
+        
+const parent = React.createElement(
+    "div",
+    { id: "parent" },
+    [
+        React.createElement(
+        "div", { id: "child" }, arrOfheadingTags
+        ),
+        React.createElement(
+        "div", { id: "child2" }, arrOfheadingTags
+        )
+    ]
 );
 
-console.log(heading); // object
+console.log(parent); // object
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// render heading object to 
-root.render(heading); 
+// render parent object to 
+root.render(parent);
