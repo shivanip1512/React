@@ -5,7 +5,7 @@ This repository is practice of Namaste React from Akshay Saini's course.
 ## Ep.01 - Inception
 
 #### Setup React in App
-- Get React CDN links
+- Get React [CDN links](https://legacy.reactjs.org/docs/cdn-links.html)
 - Paste it in your application
 
 ### React Basics :
