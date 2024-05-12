@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "My First React Project",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivanip1512/React.git"
+  },
+  "author": "Shivani Pacharne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivanip1512/React/issues"
+  },
+  "homepage": "https://github.com/shivanip1512/React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
