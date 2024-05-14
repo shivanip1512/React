@@ -19,3 +19,11 @@ root.render(obj);
 ```
 
 ⚠ Note : render replaces everything inside selected DOM element.
+
+## Ep.02 - Igniting our App
+
+#### How to ignite our App ?
+- Initialize package manager : `npm init` (gives package.json)
+- install bundler : `npm install -D parcel`
+
+package-lock.json 
