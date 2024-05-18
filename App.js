@@ -1,27 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const arrOfheadingTags = [
-    React.createElement('h1', {}, "I'm h1 Tag"),
-    React.createElement('h2', {}, "I'm h2 Tag")
-];
-        
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    [
-        React.createElement(
-        "div", { id: "child" }, arrOfheadingTags
-        ),
-        React.createElement(
-        "div", { id: "child2" }, arrOfheadingTags
-        )
-    ]
-);
+// React.createElement => Object => render => HTMLElement
 
-console.log(parent); // object
+const heading = React.createElement("h1", { id: "heading" }, "Ni hao 🥋🏆")
+console.log(heading);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// create react element using jsx
+// JSX transpilation = JSX-> Parcel -> BABEL
+// JSX => transpiled => React.createElement => ReactElement-JS Object => HTMLElement(render)
+const jsxHeading = <h1 id="heading">Ni hao using JSX 🥋🏆</h1>;
+console.log(jsxHeading);
 
-// render parent object to 
-root.render(parent);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(jsxHeading);
