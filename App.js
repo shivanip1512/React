@@ -8,8 +8,12 @@ console.log(heading);
 
 // create react element using jsx
 // JSX transpilation = JSX-> Parcel -> BABEL
-// JSX => transpiled => React.createElement => ReactElement-JS Object => HTMLElement(render)
-const jsxHeading = <h1 id="heading">Ni hao using JSX 🥋🏆</h1>;
+// JSX => Babel transpiled => React.createElement => ReactElement-JS Object => HTMLElement(render)
+const jsxHeading = (
+    <h1 id="heading" className="head">
+        Ni hao using JSX 🥋🏆
+    </h1>
+);
 console.log(jsxHeading);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
