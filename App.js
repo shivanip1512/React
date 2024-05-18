@@ -9,7 +9,8 @@ const heading = React.createElement("h1", { id: "heading" }, "Ni hao 🥋🏆")
 // JSX => Babeltranspiled => React.createElement => ReactElement-JS Object => HTMLElement(render)
 const jsxHeading = (
     <h1 id="heading" className="head">
-        Ni hao using JSX 🥋🏆
+        {heading}
+        Ni hao using JSX Element🥋🏆
     </h1>
 );
 
@@ -21,15 +22,23 @@ const jsxHeading = (
  * */
 
 // React Functional Component
-const HeadingComponent1 = () => {
+const HeadingComponent1 = function() {
     return <h1>Ni Hao from Functional Component1 🥋🏆</h1>
 };
     
 const HeadingComponent2 = () => <h1>Ni Hao from Functional Component2 🥋🏆</h1>;
 
+const jsxVar = (
+    <div id="jsxElem">
+    <h1>Ni Hao from JSX Elem 🥋🏆</h1>
+        <HeadingComponent2 />
+    </div>
+);
+
  // Component Composition
 const HeadingComponent3 = () => (
     <div id="container">
+        { [jsxHeading, 1000, jsxVar ]}
         <HeadingComponent1 />
         <h1>Ni Hao from Functional Component3 🥋🏆</h1>
     </div>
