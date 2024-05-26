@@ -18,17 +18,27 @@ const Body = () => {
         setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements.infoWithStyle.restaurants);
     };
 
+    const [isSelected, setIsSelected] = useState(false);
+
     // Conditional rendering
     return listOfRestaurant.length === 0 ? <Shimmer /> :
         (
             <div className="body">
                 <div className="filter">
-                    <button className="filter-btn" onClick={() => {
-                        // Filter Logic here
-                        const filteredList = listOfRestaurant.filter(
-                            (res) => res.info.avgRating > 4
-                        );
-                        setListOfRestaurant(filteredList);
+                    <button
+                        className={"filter-btn" + (isSelected ? " selected":"")}
+                        onClick={() => {
+                            if (!isSelected) {
+                                // Filter Logic here
+                                const filteredList = listOfRestaurant.filter(
+                                    (res) => res.info.avgRating > 4.3
+                                );
+                                setListOfRestaurant(filteredList);
+                                setIsSelected(true);
+                            } else {
+                                fetchData();
+                                setIsSelected(false);
+                            }
                     }}>4+ Ratings</button> 
                 </div>
                 <div className="res-container">
