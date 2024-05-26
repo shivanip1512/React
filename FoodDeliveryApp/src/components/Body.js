@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Shimmer from "./Shimmer";
 
+let restaurantData;
+
 const Body = () => {
 
     const [listOfRestaurant, setListOfRestaurant] = useState([]);
@@ -15,7 +17,8 @@ const Body = () => {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         //optional chaining
-        setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements.infoWithStyle.restaurants);
+        restaurantData = json?.data?.cards[1]?.card?.card?.gridElements.infoWithStyle.restaurants
+        setListOfRestaurant(restaurantData);
     };
 
     const [isSelected, setIsSelected] = useState(false);
@@ -36,7 +39,7 @@ const Body = () => {
                                 setListOfRestaurant(filteredList);
                                 setIsSelected(true);
                             } else {
-                                fetchData();
+                                setListOfRestaurant(restaurantData);
                                 setIsSelected(false);
                             }
                     }}>4+ Ratings</button> 
