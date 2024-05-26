@@ -18,35 +18,31 @@ const Body = () => {
         setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements.infoWithStyle.restaurants);
     };
 
-    if (listOfRestaurant.length === 0) {
-        return (
-            <Shimmer/>
-        );
-    };
-
-    return (
-        <div className="body">
-            <div className="filter">
-                <button className="filter-btn" onClick={() => {
-                    // Filter Logic here
-                    const filteredList = listOfRestaurant.filter(
-                        (res) => res.info.avgRating > 4
-                    );
-                    setListOfRestaurant(filteredList);
-                }}>4+ Ratings</button> 
-            </div>
-            <div className="res-container">
-                {
-                    listOfRestaurant.map(restaurant =>
-                        (
-                            <RestaurantCard key={restaurant.info.id}
-                                resData={restaurant} />
+    // Conditional rendering
+    return listOfRestaurant.length === 0 ? <Shimmer /> :
+        (
+            <div className="body">
+                <div className="filter">
+                    <button className="filter-btn" onClick={() => {
+                        // Filter Logic here
+                        const filteredList = listOfRestaurant.filter(
+                            (res) => res.info.avgRating > 4
+                        );
+                        setListOfRestaurant(filteredList);
+                    }}>4+ Ratings</button> 
+                </div>
+                <div className="res-container">
+                    {
+                        listOfRestaurant.map(restaurant =>
+                            (
+                                <RestaurantCard key={restaurant.info.id}
+                                    resData={restaurant} />
+                            )
                         )
-                    )
-                }
+                    }
+                </div>
             </div>
-        </div>
-    );
+        );
 };
 
 export default Body;
