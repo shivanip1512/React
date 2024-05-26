@@ -1,0 +1,22 @@
+.login-btn{
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.filter-btn {
+  color: #39739d;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.search{
+  margin: 10px;;
+}
+
+.filter-btn.selected{
+  background-color: #cae9ff;
+}
+
+.filter {
+  display: flex;
+}

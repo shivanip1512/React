@@ -1,4 +1,5 @@
 import { APP_LOGO } from "../utils/constants";
+import { useState } from "react";
 
 const Header = () => {
     return (
@@ -12,9 +13,19 @@ const Header = () => {
                     <li>About Us</li>
                     <li>Contact Us</li>
                     <li>Cart</li>
+                    <LoginBtn/>
                 </ul>
             </div>
         </div>
+    );
+};
+
+const LoginBtn = () => {
+    const [btn, setBtn] = useState("Login");
+    return (
+        <button
+            className="login-btn"
+            onClick={() => {setBtn(btn === "Login" ? "Logout" : "Login");}}>{btn}</button>
     );
 };
 
