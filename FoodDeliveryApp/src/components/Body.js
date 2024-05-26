@@ -8,6 +8,8 @@ let restaurantData;
 const Body = () => {
 
     const [listOfRestaurant, setListOfRestaurant] = useState([]);
+    const [isSelected, setIsSelected] = useState(false);
+    const [searchText, setSearchText] = useState("");
     
     useEffect(() => {
         fetchData();
@@ -21,13 +23,31 @@ const Body = () => {
         setListOfRestaurant(restaurantData);
     };
 
-    const [isSelected, setIsSelected] = useState(false);
 
     // Conditional rendering
     return listOfRestaurant.length === 0 ? <Shimmer /> :
         (
             <div className="body">
+               
                 <div className="filter">
+                    <div className="search">
+                        <input
+                            type="text"
+                            className="search-box"
+                            value={searchText}
+                            onChange=
+                            {
+                                (e) => { setSearchText(e.target.value) }
+                            }
+                        />
+                        <button onClick={
+                            () => {
+                                //filter restaurant cards and update UI
+                                const searchFilter = restaurantData.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                                setListOfRestaurant(searchFilter);
+                            }
+                        }>Search</button>
+                    </div>
                     <button
                         className={"filter-btn" + (isSelected ? " selected":"")}
                         onClick={() => {
