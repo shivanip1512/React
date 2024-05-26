@@ -1,0 +1,19 @@
+.shimmer{
+    background-color: rgb(234, 234, 234);
+    margin: 10px;
+}
+
+.shimmer.card-img{
+    width: 210px;
+    height: 130px;
+}
+.shimmer.card-content{
+    width: 200px;
+    height: 10px;
+}
+
+.shimmer-container{
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
