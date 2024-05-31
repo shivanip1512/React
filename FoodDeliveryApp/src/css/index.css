@@ -20,3 +20,14 @@
 .filter {
   display: flex;
 }
+
+.error-page img{
+    height:100vh;
+    width:100vw;
+}
+
+.error-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
