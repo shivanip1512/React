@@ -8,12 +8,12 @@ const Shimmer = () => {
     );
 };
 
-const ShimmerCard = () => {
+export const ShimmerCard = () => {
     return (
         <div className="shimmer-card">
                 <div className="shimmer card-img"></div>
                 <div className="shimmer card-content"></div>
-                <div className="shimmer card-content" style={{"width":"100px"}}></div>
+                <div className="shimmer card-content" style={{"width":"45%"}}></div>
         </div>
     );
 };
