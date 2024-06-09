@@ -36,3 +36,8 @@ a.link{
   color: #000;
   text-decoration: none;
 }
+
+.user-card {
+  padding: 10px;
+  border: 1px solid black;
+}
