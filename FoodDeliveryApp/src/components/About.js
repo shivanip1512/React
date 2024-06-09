@@ -6,26 +6,21 @@ class About extends Component{
 
     constructor(props) {
         super(props);
-        console.log("Parent Constructor")
     }
 
     componentDidMount() {
-        console.log("Parent mounted")
+        
     }
 
     render() {
-        console.log("Parent Render")
         return (
         <div>
             <h1>About</h1>
             <h3>This is Dummy Project</h3>
             <UserClass
-                name={"Shivani Pacharne (Class)"}
-                location={"Pune (Class)"}
-            />
-            <UserClass
-                name={"Mark (Class)"}
-                location={"US (Class)"}
+                name="Dummy"
+                    location="Ireland"
+                    email="+91-96853XXXXX"
             />
         </div>
     );
