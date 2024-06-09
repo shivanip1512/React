@@ -23,6 +23,10 @@ class About extends Component{
                 name={"Shivani Pacharne (Class)"}
                 location={"Pune (Class)"}
             />
+            <UserClass
+                name={"Mark (Class)"}
+                location={"US (Class)"}
+            />
         </div>
     );
     }
