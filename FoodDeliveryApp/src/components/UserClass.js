@@ -22,10 +22,19 @@ class UserClass extends React.Component {
             userInfo: json
             }
         );
+
+        this.timer = setInterval(() => {
+            console.log("Timer there");
+        },1000);
     }
 
     componentDidUpdate() {
         console.log("updated!");
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
+        console.log("ComponentWillUnmount");
     }
 
     render() {
@@ -33,13 +42,13 @@ class UserClass extends React.Component {
         console.log("rendered!")
         return (
             <div className="user-card" >
-                <img src={avatar_url} />
-            <h2>Name : {name}</h2>
-            <h3>Location : {location}</h3>
-            <h4>Contact : {blog}</h4>
+            <img src={avatar_url} />
+            <h2>Name : {name} </h2>
+            <h3>Location : {location} </h3>
+            <h4>Contact : {blog} </h4>
         </div>
         );
     }
 }
 
-export default UserClass;
+export default UserClass;1
