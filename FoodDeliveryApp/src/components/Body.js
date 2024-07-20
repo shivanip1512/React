@@ -26,7 +26,7 @@ const Body = () => {
     };
 
     const onlineStatus = useOnlineStatus();
-
+    
     if (onlineStatus === false)
         return (
             <h1>Looks like you are offline!! Please check your internet connection.</h1>
@@ -37,18 +37,19 @@ const Body = () => {
         (
             <div className="body">
                
-                <div className="filter">
-                    <div className="search">
+                <div className="filter flex">
+                    <div className="search m-4 p-4">
                         <input
                             type="text"
-                            className="search-box"
+                            className="border rounded-md border-black p-1"
                             value={searchText}
+                            placeholder="Search Restaurant"
                             onChange=
                             {
                                 (e) => { setSearchText(e.target.value) }
                             }
                         />
-                        <button onClick={
+                        <button className="bg-green-100 px-4 py-1 m-4 rounded-md" onClick={
                             () => {
                                 //filter restaurant cards and update UI
                                 const searchFilter = restaurantData.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
@@ -56,8 +57,9 @@ const Body = () => {
                             }
                         }>Search</button>
                     </div>
-                    <button
-                        className={"filter-btn" + (isSelected ? " selected":"")}
+                    <div className=" m-4 p-4 flex items-center">
+                        <button
+                        className={"px-4 py-1 bg-gray-100 rounded-md" + (isSelected ? " selected":"")}
                         onClick={() => {
                             if (!isSelected) {
                                 // Filter Logic here
@@ -70,9 +72,13 @@ const Body = () => {
                                 setListOfRestaurant(restaurantData);
                                 setIsSelected(false);
                             }
-                    }}>4+ Ratings</button> 
+                            }}>4+ Ratings</button> 
+                        </div>
                 </div>
-                <div className="res-container">
+                <div
+                    className="res-container
+                                flex flex-wrap
+                                justify-center">
                     {
                         listOfRestaurant.map(restaurant =>
                             (
