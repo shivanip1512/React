@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 let restaurantData;
 
@@ -24,6 +25,12 @@ const Body = () => {
         setListOfRestaurant(restaurantData);
     };
 
+    const onlineStatus = useOnlineStatus();
+
+    if (onlineStatus === false)
+        return (
+            <h1>Looks like you are offline!! Please check your internet connection.</h1>
+        );
 
     // Conditional rendering
     return listOfRestaurant.length === 0 ? <Shimmer /> :
