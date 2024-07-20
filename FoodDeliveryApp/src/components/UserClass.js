@@ -14,32 +14,33 @@ class UserClass extends React.Component {
     }
 
     async componentDidMount() {
-        console.log("mounted!");
+        // console.log("mounted!");
         const data = await fetch("https://api.github.com/users/shivanip1512");
         const json = await data.json();
-        console.log(json);
         this.setState({
             userInfo: json
             }
         );
 
+        /*
         this.timer = setInterval(() => {
             console.log("Timer there");
         },1000);
+        */
     }
 
     componentDidUpdate() {
-        console.log("updated!");
+        // console.log("updated!");
     }
 
     componentWillUnmount() {
-        clearInterval(this.timer);
-        console.log("ComponentWillUnmount");
+        // clearInterval(this.timer);
+        // console.log("ComponentWillUnmount");
     }
 
     render() {
         const { name, location, blog, avatar_url } = this.state.userInfo;
-        console.log("rendered!")
+        // console.log("rendered!")
         return (
             <div className="user-card" >
             <img src={avatar_url} />
