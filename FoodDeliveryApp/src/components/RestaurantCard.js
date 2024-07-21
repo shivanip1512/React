@@ -3,13 +3,13 @@ import { Review } from "./Review";
 
 const RestaurantCard = (props) => {
     const { resData } = props;
-    const { cloudinaryImageId, name, cuisines, avgRating, sla, totalRatingsString } = resData?.info;
+    const { cloudinaryImageId, name, cuisines, avgRating, sla, totalRatingsString, costForTwo } = resData?.info;
     return (
         <div className="m-3 p-4 w-[250px] h-[350px] hover:shadow-lg rounded-lg hover:bg-gray-50" style={{ backgroundColor: "#f0f0f0f" }}>
             <img className="res-logo rounded-md object-cover  h-48 w-96" src={CDN_RESTAURANT_URL + cloudinaryImageId}></img>
             <h3 className="font-bold py-1 text-lg text-ellipsis whitespace-nowrap overflow-hidden">{name}</h3>
             <h4 className="text-ellipsis whitespace-nowrap overflow-hidden hover:overflow-visible hover:whitespace-normal">{cuisines.join(", ")}</h4>
-            <Review rating={avgRating} totalRating={totalRatingsString} />
+            <Review rating={avgRating} totalRating={totalRatingsString} costForTwo={costForTwo} />
             <h4>{sla.deliveryTime} mins</h4>
         </div>
     );
