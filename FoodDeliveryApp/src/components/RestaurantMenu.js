@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import { RestaurantCategory } from "./RestaurantCategory";
 import { RestaurantMenuBriefCard } from "./RestaurantMenuBriefCard";
@@ -7,6 +8,8 @@ import { useParams } from "react-router-dom";
 
 const RestaurantMenu = () => {
     const { resId } = useParams();
+
+    const [showIndex, setShowIndex] = useState(0);
     
     const resInfo = useRestaurantMenu(resId);
     
@@ -24,8 +27,14 @@ const RestaurantMenu = () => {
             <RestaurantMenuBriefCard briefCard={resInfo?.cards[2]?.card?.card?.info} />
             <div className="mt-10">
             {
-                itemCategories.map((category) => (
-                    <RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card} />
+                    itemCategories.map((category, index) => (
+                    // Controlled component
+                    <RestaurantCategory
+                            key={category?.card?.card?.title}
+                            data={category?.card?.card}
+                            showItems={index === showIndex}
+                            setShowIndex={()=>setShowIndex(index === showIndex ? null : index)}
+                    />
                 ))
                 }
             </div>

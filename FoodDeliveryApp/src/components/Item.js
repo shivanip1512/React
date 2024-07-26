@@ -17,7 +17,7 @@ export const Item = ({ data }) => {
             </div>
             <div className="w-3/12 ml-2">
                 <div className="absolute mx-12 my-[90px]">
-                    <button type="button" className="font-extrabold text-green-600 bg-white border border-gray-300 focus:outline-none hover:bg-gray-300 rounded-lg text-sm px-4 py-2 me-2 mb-2 shadow-lg">ADD</button>
+                    <button type="button" className="font-extrabold text-green-600 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 rounded-lg text-sm px-6 py-2 me-2 mb-2 shadow-md">ADD</button>
                 </div>
                 <img className="object-cover w-44 h-28 rounded-lg" src={ITEM_IMG_URL + data.imageId} />
             </div>
