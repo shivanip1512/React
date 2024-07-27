@@ -51,14 +51,10 @@ const Header = () => {
 const Profile = ({username}) => {
     return (
         <div>
-            <button type="button" className="flex text-sm rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
-                <img className="w-8 h-8 rounded-full" src={DEFAULT_PROFILE_IMG}alt="user photo"/>
+            <button type="button" className="flex text-sm rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 text-center">
+                <img className="w-7 h-7 rounded-full mx-5" src={DEFAULT_PROFILE_IMG}alt="user photo"/>
+               <div class="opacity-0 hover:opacity-100 duration-300 absolute z-10 py-9 h-9 w-16">{username}</div>
             </button>
-             <div className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
-            <div className="px-4 py-3">
-                <span className="block text-sm text-gray-900 dark:text-white">{username}</span>
-            </div>
-      </div>
         </div>
     );
 }
