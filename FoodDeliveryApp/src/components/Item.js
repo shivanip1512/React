@@ -1,4 +1,4 @@
-import { ITEM_IMG_URL } from "../utils/constants";
+import { CDN_RESTAURANT_URL } from "../utils/constants";
 import { Review } from "./Review";
 
 export const Item = ({ data }) => {
@@ -19,7 +19,7 @@ export const Item = ({ data }) => {
                 <div className="absolute mx-12 my-[90px]">
                     <button type="button" className="font-extrabold text-green-600 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 rounded-lg text-sm px-6 py-2 me-2 mb-2 shadow-md">ADD</button>
                 </div>
-                <img className="object-cover w-44 h-28 rounded-lg" src={ITEM_IMG_URL + data.imageId} />
+                <img className="object-cover w-44 h-28 rounded-lg" src={CDN_RESTAURANT_URL + data.imageId} />
             </div>
         </div>
     );
