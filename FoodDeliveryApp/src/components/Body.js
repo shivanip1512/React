@@ -1,9 +1,10 @@
-import  RestaurantCard  from "./RestaurantCard";
-import { useState } from "react";
+import RestaurantCard, {withOfferedLabel} from "./RestaurantCard";
+import { useContext, useState } from "react";
 import { useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { UserContext } from "../utils/UserContext";
 
 let restaurantData;
 
@@ -12,6 +13,9 @@ const Body = () => {
     const [listOfRestaurant, setListOfRestaurant] = useState([]);
     const [isSelected, setIsSelected] = useState(false);
     const [searchText, setSearchText] = useState("");
+
+    const OfferedRestaurantCard = withOfferedLabel(RestaurantCard);
+    const {loggedInUser, setUserName} = useContext(UserContext);
     
     useEffect(() => {
         fetchData();
@@ -37,8 +41,8 @@ const Body = () => {
         (
             <div className="body">
                
-                <div className="filter flex">
-                    <div className="search m-4 p-4">
+                <div className="flex justify-between">
+                    <div className="search m-4 p-4 w-3/12">
                         <input
                             type="text"
                             className="border rounded-md border-black p-1"
@@ -57,7 +61,7 @@ const Body = () => {
                             }
                         }>Search</button>
                     </div>
-                    <div className=" m-4 p-4 flex items-center">
+                    <div className=" m-4 p-4 flex items-center w-6/12">
                         <button
                         className={"px-4 py-1 bg-gray-100 rounded-md" + (isSelected ? " selected":"")}
                         onClick={() => {
@@ -72,8 +76,17 @@ const Body = () => {
                                 setListOfRestaurant(restaurantData);
                                 setIsSelected(false);
                             }
-                            }}>4+ Ratings</button> 
-                        </div>
+                            }}>Top Restaurants</button> 
+                    </div>
+                    <div className="m-4 p-4 w-2/12">
+                        <label>Username : </label>
+                        <input type="text"
+                            className="border rounded-md border-black p-1"
+                            placeholder="UserName"
+                            value={loggedInUser}
+                            onChange={(e)=> setUserName(e.target.value)}
+                        ></input>
+                    </div>
                 </div>
                 <div
                     className="res-container
@@ -84,7 +97,10 @@ const Body = () => {
                             (
                             <Link key={restaurant.info.id} className="link"
                                 to={"/restaurants/" + restaurant.info.id}>
-                                    <RestaurantCard resData={restaurant} />
+                                {
+                                     restaurant.info.aggregatedDiscountInfoV3 == undefined ?
+                                    <RestaurantCard resData={restaurant} /> : <OfferedRestaurantCard resData={restaurant} />
+                                }
                             </Link>
                             )
                         )
