@@ -1,4 +1,4 @@
-import  RestaurantCard  from "./RestaurantCard";
+import RestaurantCard, {withOfferedLabel} from "./RestaurantCard";
 import { useState } from "react";
 import { useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -12,6 +12,8 @@ const Body = () => {
     const [listOfRestaurant, setListOfRestaurant] = useState([]);
     const [isSelected, setIsSelected] = useState(false);
     const [searchText, setSearchText] = useState("");
+
+    const OfferedRestaurantCard = withOfferedLabel(RestaurantCard);
     
     useEffect(() => {
         fetchData();
@@ -84,7 +86,10 @@ const Body = () => {
                             (
                             <Link key={restaurant.info.id} className="link"
                                 to={"/restaurants/" + restaurant.info.id}>
-                                    <RestaurantCard resData={restaurant} />
+                                {
+                                     restaurant.info.aggregatedDiscountInfoV3 == undefined ?
+                                    <RestaurantCard resData={restaurant} /> : <OfferedRestaurantCard resData={restaurant} />
+                                }
                             </Link>
                             )
                         )
