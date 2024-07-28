@@ -56,7 +56,7 @@ const Header = () => {
 const Profile = ({username}) => {
     return (
         <div>
-            <button type="button" className="fle text-sm rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 text-center">
+            <button type="button" className="flex text-sm rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 text-center">
                 <img className="w-7 h-7 rounded-full mx-5" src={DEFAULT_PROFILE_IMG}alt="user photo"/>
                <div className="opacity-0 hover:opacity-100 duration-300 absolute z-10 py-9 h-9 w-16">{username}</div>
             </button>

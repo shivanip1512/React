@@ -7,11 +7,14 @@ import { clearCart, removeItem } from "../utils/redux/cartSlice";
 var totalAmount = 0;
 
 export const Cart = () => {
+  
   const cartItems = useSelector((store) => store.cart.items);
+
   const dispatch = useDispatch();
   const handleClearCart = () => {
     dispatch(clearCart());
   }
+
     return (
         <section className="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
           <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
