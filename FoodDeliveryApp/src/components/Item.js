@@ -1,7 +1,17 @@
+import { useDispatch } from "react-redux";
 import { CDN_RESTAURANT_URL } from "../utils/constants";
 import { Review } from "./Review";
+import { addItem } from "../utils/redux/cartSlice";
 
 export const Item = ({ data }) => {
+
+    const dispatch = useDispatch();
+
+    const handleAddItem = (item) => { 
+        // Dispatch an action
+        dispatch(addItem(item));
+    }
+
     // console.log(data)
     return (
         <div className="mb-5 pb-8 flex justify-between border-b-2 border-gray-300">
@@ -17,7 +27,10 @@ export const Item = ({ data }) => {
             </div>
             <div className="w-3/12 ml-2">
                 <div className="absolute mx-12 my-[90px]">
-                    <button type="button" className="font-extrabold text-green-600 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 rounded-lg text-sm px-6 py-2 me-2 mb-2 shadow-md">ADD</button>
+                    <button
+                        type="button"
+                        className="font-extrabold text-green-600 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 rounded-lg text-sm px-6 py-2 me-2 mb-2 shadow-md"
+                        onClick={() => handleAddItem(data)}>ADD</button>
                 </div>
                 <img className="object-cover w-44 h-28 rounded-lg" src={CDN_RESTAURANT_URL + data.imageId} />
             </div>

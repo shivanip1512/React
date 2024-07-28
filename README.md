@@ -27,3 +27,14 @@ root.render(obj);
 - install bundler : `npm install -D parcel`
 
 package-lock.json 
+
+
+## Ep.12 - Redux Toolkit
+- Install libraries :
+    - @reduxjs/toolkit
+    - react-redux
+- Build our store
+- Connect our store to our app
+- Create a slice (cartSlice)
+- dispatch (action)
+- Selector
