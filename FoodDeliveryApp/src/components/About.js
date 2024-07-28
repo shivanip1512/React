@@ -16,18 +16,20 @@ class About extends Component{
     render() {
         return (
         <div>
-            <h1>About</h1>
-            <h3>This is Dummy Project</h3>
             <UserClass
                 name="Dummy"
                     location="Ireland"
                     email="+91-96853XXXXX"
                 />
+                {
+                /*
                 <UserContext.Consumer>
                     {
                         (data) => <p>{data.loggedInUser}</p>
                     }
                 </UserContext.Consumer>
+                */
+                }
         </div>
     );
     }
