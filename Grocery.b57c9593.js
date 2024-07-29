@@ -1,0 +1,2 @@
+var e=globalThis.parcelRequire77dd;(0,e.register)("2SJLi",function(r,o){Object.defineProperty(r.exports,"__esModule",{value:!0,configurable:!0}),Object.defineProperty(r.exports,"default",{get:()=>t,set:void 0,enumerable:!0,configurable:!0});var i=e("2elQz"),t=()=>(0,i.jsx)("h1",{children:" our Grocery Online Store, and we have have alot of child components inside this web page!"})});
+//# sourceMappingURL=Grocery.b57c9593.js.map
