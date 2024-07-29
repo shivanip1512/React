@@ -38,3 +38,9 @@ package-lock.json
 - Create a slice (cartSlice)
 - dispatch (action)
 - Selector
+
+
+## Deploy Minimised files to gh-pages
+- Delete gh-pages branch if already present from github repository.
+- Run `npm install gh-pages --save-dev`
+- Run `npm run deploy`
