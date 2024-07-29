@@ -9,6 +9,7 @@ export const Item = ({ data }) => {
 
     const handleAddItem = (item) => { 
         // Dispatch an action
+        item.cartQuantity = 1;
         dispatch(addItem(item));
     }
 

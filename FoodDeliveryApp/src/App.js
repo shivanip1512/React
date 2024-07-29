@@ -9,7 +9,7 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import { UserContext } from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/redux/appStore";
-import { Cart } from "./components/Cart";
+import { Cart } from "./components/Cart/Cart";
 
 /* 
 PERFORMANCE IMPROVEMENT -
