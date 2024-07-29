@@ -1,38 +1,46 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { CDN_RESTAURANT_URL } from "../../utils/constants";
 import { removeItem, updateItem } from "../../utils/redux/cartSlice";
-
-var totalAmount = 0;
+import { addItem } from "../../utils/redux/favSlice";
 
 export const CartItem = ({ data }) => {
   const [itemQuantity, setItemQuantity] = useState(1);
   const price = ( data.price ? data.price : data.defaultPrice) / 100;
-  const itemTotalAmount = price * itemQuantity;
-  totalAmount += itemTotalAmount;
-    // console.log(totalAmount, itemTotalAmount)
+
+  const favItems = useSelector((store) => store.favourites.items);
+
   const dispatch = useDispatch();
   const handleRemoveItem = (item) => {
     dispatch(removeItem(item))
-    };
+  };
     
-    const decrementItemQuantity = (item) => {
-        const updatedData = JSON.parse(JSON.stringify(item));
-        if (itemQuantity > 0) {
-            updatedData.cartQuantity = itemQuantity-1;
-            setItemQuantity(itemQuantity - 1);
-            dispatch(updateItem(updatedData));
-        }
+  const decrementItemQuantity = (item) => {
+    const updatedData = JSON.parse(JSON.stringify(item));
+    if (itemQuantity > 0) {
+      updatedData.cartQuantity = itemQuantity-1;
+      setItemQuantity(itemQuantity - 1);
+      dispatch(updateItem(updatedData));
     }
+  };
 
-    const incrementItemQuantity = (item) => {
-        const updatedData = JSON.parse(JSON.stringify(item));
-        if (itemQuantity < 50) {
-            updatedData.cartQuantity = itemQuantity+1;
-            setItemQuantity(itemQuantity + 1);
-            dispatch(updateItem(updatedData));
-        }
+  const incrementItemQuantity = (item) => {
+    const updatedData = JSON.parse(JSON.stringify(item));
+    if (itemQuantity < 50) {
+      updatedData.cartQuantity = itemQuantity+1;
+      setItemQuantity(itemQuantity + 1);
+      dispatch(updateItem(updatedData));
     }
+  };
+
+  const handleAddFavourite = (item) => {
+    console.log(favItems, item);
+    const itemNotInFavs = favItems.findIndex(i => i.id === item.id) === -1;
+    if(itemNotInFavs)
+      dispatch(addItem(item));
+    else
+      alert('Item already present in Favourites.');
+  };
 
   return (
     <div className="mx-auto w-full pb-5">
@@ -51,8 +59,8 @@ export const CartItem = ({ data }) => {
                   </button>
                   <input type="text" id="counter-input" data-input-counter className="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0" value={itemQuantity} required readOnly/>
                   <button type="button" id="increment-button" data-input-counter-increment="counter-input" className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100" onClick={()=>incrementItemQuantity(data)}>
-                    <svg className="h-2.5 w-2.5 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 1v16M1 9h16" />
+                    <svg className="h-2.5 w-2.5 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 1v16M1 9h16" />  
                     </svg>
                   </button>
                 </div>
@@ -65,8 +73,8 @@ export const CartItem = ({ data }) => {
               <a href="#" className="text-base font-medium text-gray-900 hover:underline dark:text-white">{data.name}</a>
 
                 <div className="flex items-center gap-4">
-                  <button type="button" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white">
-                    <svg className="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <button type="button" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" onClick={()=>{handleAddFavourite(data)}}>
+                    <svg className="me-1.5 h-5 w-5 hover:text-red-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
                     </svg>
                     Add to Favorites

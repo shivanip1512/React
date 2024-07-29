@@ -36,7 +36,7 @@ const Header = () => {
                         <Link to="/contact">Contact Us</Link>
                     </li>
                     <li className="px-4 mt-5 hover:text-orange-600">
-                        <Link to="/grocery">Grocery</Link>
+                        <Link to="/favourites">Favourites</Link>
                     </li>
                     <button
                         className="px-4 mt-3 hover:text-orange-600"

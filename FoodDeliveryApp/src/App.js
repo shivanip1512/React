@@ -23,7 +23,7 @@ dynamic import
 // import Grocery from "./components/Grocery";
 // import About from "./components/About";
 
-const Grocery = lazy(() => import("./components/Grocery"));
+const Favorites = lazy(() => import("./components/Favorites"));
 const About = lazy(()=>import("./components/About"));
 
 
@@ -74,11 +74,11 @@ const appRouter = createBrowserRouter([
                 element: <Contact/>,
             },
             {
-                path: "grocery",
+                path: "favourites",
                 element:
                     <Suspense
                     fallback={<h1>Loading Grocery...</h1>}>
-                        <Grocery />
+                        <Favorites />
                     </Suspense>,
             },
             {
