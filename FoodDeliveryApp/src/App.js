@@ -7,6 +7,9 @@ import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { UserContext } from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/redux/appStore";
+import { Cart } from "./components/Cart/Cart";
 
 /* 
 PERFORMANCE IMPROVEMENT -
@@ -20,7 +23,7 @@ dynamic import
 // import Grocery from "./components/Grocery";
 // import About from "./components/About";
 
-const Grocery = lazy(() => import("./components/Grocery"));
+const Favorites = lazy(() => import("./components/Favorites"));
 const About = lazy(()=>import("./components/About"));
 
 
@@ -38,14 +41,14 @@ const AppLayout = () => {
     );
 
     return (
-        <UserContext.Provider value={{loggedInUser : userName, setUserName}}>
-            <div className="app">
-                {/* <UserContext.Provider value={{loggedInUser : "Ratan Tata"}}> */}
-                <Header />
-                {/* </UserContext.Provider> */}
-                <Outlet/>
-            </div>
-        </UserContext.Provider>
+        <Provider store={appStore}>
+            <UserContext.Provider value={{loggedInUser : userName, setUserName}}>
+                <div className="app">
+                    <Header />
+                    <Outlet />
+                </div>
+            </UserContext.Provider>
+        </Provider>
     );
 };
 
@@ -71,12 +74,16 @@ const appRouter = createBrowserRouter([
                 element: <Contact/>,
             },
             {
-                path: "grocery",
+                path: "favourites",
                 element:
                     <Suspense
                     fallback={<h1>Loading Grocery...</h1>}>
-                        <Grocery />
+                        <Favorites />
                     </Suspense>,
+            },
+            {
+                path: "/cart",
+                element: <Cart/>,
             },
             {
                 path: "/restaurants/:resId",

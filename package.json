@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "My First React Project",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
@@ -16,16 +18,19 @@
   "bugs": {
     "url": "https://github.com/shivanip1512/React/issues"
   },
-  "homepage": "https://github.com/shivanip1512/React#readme",
+  "homepage": "https://github.com/shivanip1512/React",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.12.0",
     "postcss": "^8.4.39",
     "process": "^0.11.10",
     "tailwindcss": "^3.4.6"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
     "react-router-dom": "^6.23.1"
   },
   "comment-browserlist": [
