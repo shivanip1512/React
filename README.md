@@ -44,3 +44,19 @@ package-lock.json
 - Delete gh-pages branch if already present from github repository.
 - Run `npm install gh-pages --save-dev`
 - Run `npm run deploy`
+
+
+## Types of testing (developer)
+- Unit testing
+- Integration testing
+- End to End testing
+
+
+# Setting up Testing in app
+- Install React Testing Library
+- Install jest
+- Install Babel dependencies to be used with jest
+- Configure Babel
+- Configure Parcel Config file to disable default babel transpilation
+- Jest Confirguration (run `npx jest --init`)
+- Install `jest-env-jsdom` library, if jest version >= 28
