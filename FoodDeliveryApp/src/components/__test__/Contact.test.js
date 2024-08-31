@@ -4,19 +4,19 @@ import "@testing-library/jest-dom"
 
 describe("Contact Us Component test cases", () => {
 
-test("test load of Component", () => {
+it("test load of Component", () => {
     render(<Contact />);
     const heading = screen.getByRole("heading");
     expect(heading).toBeInTheDocument();
 });
 
-test("test load of button inside Component", () => {
+it("test load of button inside Component", () => {
     render(<Contact />);
     const button = screen.getByRole("button");
     expect(button).toBeInTheDocument();
 });
 
-test("test load of Text inside Component", () => {
+it("test load of Text inside Component", () => {
     render(<Contact />);
     const msg = screen.getByText("Your message");
     expect(msg).toBeInTheDocument();

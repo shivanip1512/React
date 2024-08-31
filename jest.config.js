@@ -193,6 +193,9 @@ const config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+   moduleNameMapper: {
+    '\\.(png|jpg|jpeg|gif)$': '<rootDir>/__mocks__/fileMock.js',
+  },
 };
 
 module.exports = config;
