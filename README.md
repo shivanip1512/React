@@ -60,3 +60,6 @@ package-lock.json
 - Configure Parcel Config file to disable default babel transpilation
 - Jest Confirguration (run `npx jest --init`)
 - Install `jest-env-jsdom` library, if jest version >= 28
+- Install @babel/preset-react to make JSX work in test cases
+- Include @babel/preset-react inside babel config
+- Install @testing-library/jest-dom
