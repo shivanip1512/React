@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { UserContext } from "../utils/UserContext";
+import mockData from "../../__mocks__/RestaurantCardsMock.json"
 
 let restaurantData;
 
@@ -18,14 +19,20 @@ const Body = () => {
     const {loggedInUser, setUserName} = useContext(UserContext);
     
     useEffect(() => {
-        fetchData();
+        if (process.env.NODE_ENV === 'production') {
+            fetchData();
+        }
+        else {
+            setListOfRestaurant(mockData);
+        }
     }, []);
     
     const fetchData = async () => {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         //optional chaining
-        restaurantData = json?.data?.cards[1]?.card?.card?.gridElements.infoWithStyle.restaurants
+        restaurantData = json?.data?.cards[1]?.card?.card?.gridElements.infoWithStyle.restaurants;
+
         setListOfRestaurant(restaurantData);
     };
 

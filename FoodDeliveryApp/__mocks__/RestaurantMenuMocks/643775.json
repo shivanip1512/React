@@ -1,0 +1,1513 @@
+{
+    "statusMessage": "done successfully",
+    "cards": [
+        {
+            "card": {
+                "card": {
+                    "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                    "text": "WeFit - Protein Bowls, Salads & Sandwiches",
+                    "headerStyling": {
+                        "textColor": "text_Highest_Emphasis",
+                        "textVariant": "header_H3_Black"
+                    }
+                }
+            }
+        },
+        {
+            "card": {
+                "card": {
+                    "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+                    "tabs": [
+                        {
+                            "id": "Order Online",
+                            "title": "Order Online"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "card": {
+                "card": {
+                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                    "info": {
+                        "id": "643775",
+                        "name": "WeFit - Protein Bowls, Salads & Sandwiches",
+                        "city": "Pune",
+                        "slugs": {
+                            "restaurant": "wefit-superfood-meals-camp-koregaon-park",
+                            "city": "pune"
+                        },
+                        "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+                        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/23/db0d5750-c352-409e-9743-c4deb10c863d_643775.JPG",
+                        "locality": "Camp",
+                        "areaName": "South Extension",
+                        "costForTwo": "25000",
+                        "costForTwoMessage": "₹250 for two",
+                        "cuisines": [
+                            "Healthy Food",
+                            "Salads"
+                        ],
+                        "avgRating": 4.6,
+                        "feeDetails": {
+                            "icon": "v1648635511/Delivery_fee_new_cjxumu"
+                        },
+                        "parentId": "355285",
+                        "avgRatingString": "4.6",
+                        "totalRatingsString": "309 ratings",
+                        "sla": {
+                            "restaurantId": "643775",
+                            "deliveryTime": 25,
+                            "minDeliveryTime": 20,
+                            "maxDeliveryTime": 30,
+                            "lastMileTravel": 4.1,
+                            "serviceability": "SERVICEABLE",
+                            "rainMode": "RAIN_MODE_NONE",
+                            "longDistance": "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                            "zoneId": 90,
+                            "slaString": "20-30 MINS",
+                            "lastMileTravelString": "4.0 km",
+                            "iconType": "ICON_TYPE_EMPTY"
+                        },
+                        "availability": {
+                            "nextCloseTime": "2024-09-02 02:00:00",
+                            "visibility": true,
+                            "opened": true,
+                            "restaurantClosedMeta": {}
+                        },
+                        "aggregatedDiscountInfo": {
+                            "header": "Get items under 139",
+                            "shortDescriptionList": [
+                                {
+                                    "meta": "Get items under 139",
+                                    "discountType": "FinalPrice",
+                                    "operationType": "RESTAURANT"
+                                },
+                                {
+                                    "meta": "50% off | Use TRYNEW",
+                                    "discountType": "Percentage",
+                                    "operationType": "RESTAURANT"
+                                }
+                            ],
+                            "descriptionList": [
+                                {
+                                    "meta": "Get items under 139",
+                                    "discountType": "FinalPrice",
+                                    "operationType": "RESTAURANT"
+                                },
+                                {
+                                    "meta": "50% off up to ₹100 | Use code TRYNEW",
+                                    "discountType": "Percentage",
+                                    "operationType": "RESTAURANT"
+                                }
+                            ],
+                            "visible": true
+                        },
+                        "badges": {},
+                        "slugString": "wefit-superfood-meals-camp-koregaon-park",
+                        "isOpen": true,
+                        "labels": [
+                            {
+                                "title": "Timings",
+                                "message": "null"
+                            },
+                            {
+                                "title": "Address",
+                                "message": "PT Gera First Floor, Unit No 14, Opposite Axis,Bank, Bund Garden, Pune , Dhole Patil Road,Pune PMC, Maharashtra-411001"
+                            },
+                            {
+                                "title": "Cuisines",
+                                "message": "Healthy Food,Salads"
+                            }
+                        ],
+                        "logo": "Brand logo/WeFitBowlsSLDSndwch",
+                        "totalRatings": 309,
+                        "aggregatedDiscountInfoV2": {
+                            "header": "Get items under 139",
+                            "shortDescriptionList": [
+                                {
+                                    "meta": "Get items under 139",
+                                    "discountType": "FinalPrice",
+                                    "operationType": "RESTAURANT"
+                                },
+                                {
+                                    "meta": "50% off | Use TRYNEW",
+                                    "discountType": "Percentage",
+                                    "operationType": "RESTAURANT"
+                                }
+                            ],
+                            "descriptionList": [
+                                {
+                                    "meta": "Get items under 139",
+                                    "discountType": "FinalPrice",
+                                    "operationType": "RESTAURANT"
+                                },
+                                {
+                                    "meta": "50% off up to ₹100 | Use code TRYNEW",
+                                    "discountType": "Percentage",
+                                    "operationType": "RESTAURANT"
+                                }
+                            ],
+                            "couponDetailsCta": "View coupon details"
+                        },
+                        "type": "F",
+                        "nudgeBanners": [
+                            {
+                                "priority": 2,
+                                "discountInfo": {
+                                    "discountType": "FinalPrice",
+                                    "value": 159
+                                },
+                                "unlockedMessage": "Deal of the Day unlocked!",
+                                "minItemCount": 1,
+                                "maxItemCount": 1,
+                                "type": "SILD",
+                                "nudgeTagInfo": {
+                                    "title": "Deal of the Day",
+                                    "fontName": "FONT_NAME_CONDENSED_BOLD"
+                                },
+                                "logoCtx": {}
+                            }
+                        ],
+                        "headerBanner": {
+                            "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/643775"
+                        },
+                        "expectationNotifiers": [
+                            {
+                                "icon": {
+                                    "imageId": "v1648635511/Delivery_fee_new_cjxumu"
+                                },
+                                "popup": {
+                                    "cta": {}
+                                },
+                                "type": "DISTANCE_FEE_NON_FOOD_LM",
+                                "enrichedText": "<b>4.1 km</b> | Delivery fees applicable. Delivered & charged by the restaurant.",
+                                "halfCardPopup": {
+                                    "halfCardPopupHeader": {}
+                                },
+                                "trailingIcon": {}
+                            }
+                        ],
+                        "ratingSlab": "RATING_SLAB_5",
+                        "orderabilityCommunication": {
+                            "title": {},
+                            "subTitle": {},
+                            "message": {},
+                            "customIcon": {}
+                        },
+                        "hasBestsellerItems": true,
+                        "hasGuiltfreeItems": true,
+                        "cartOrderabilityNudgeBanner": {
+                            "parameters": {},
+                            "presentation": {}
+                        },
+                        "latLong": "18.53459242,73.87887302",
+                        "backgroundImageOverlayInfo": {}
+                    },
+                    "analytics": {}
+                },
+                "relevance": {
+                    "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_ON_ITEM_ADD",
+                    "sectionId": "POP_UP_CROUTON_MENU"
+                }
+            }
+        },
+        {
+            "card": {
+                "card": {
+                    "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+                    "layout": {
+                        "rows": 1,
+                        "columns": 5,
+                        "horizontalScrollEnabled": true,
+                        "itemSpacing": 12,
+                        "lineSpacing": 10,
+                        "widgetPadding": {},
+                        "containerStyle": {
+                            "containerPadding": {
+                                "left": 10,
+                                "right": 10,
+                                "bottom": 16
+                            }
+                        },
+                        "scrollBar": {}
+                    },
+                    "id": "offerCollectionWidget_UX4",
+                    "gridElements": {
+                        "infoWithStyle": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                            "offers": [
+                                {
+                                    "info": {
+                                        "header": "Extra ₹15 off",
+                                        "offerTagColor": "#E46D47",
+                                        "logoBottom": "rng/md/ads/production/d07196b25b85d1fd9951e10c255ab737",
+                                        "offerIds": [
+                                            "15e1398b-7562-4fe3-b550-dfa367069cb4"
+                                        ],
+                                        "expiryTime": "1970-01-01T00:00:00Z",
+                                        "description": "APPLICABLE OVER & ABOVE COUPONS",
+                                        "offerType": "offers",
+                                        "restId": "643775",
+                                        "offerLogo": "rng/md/ads/production/d07196b25b85d1fd9951e10c255ab737",
+                                        "descriptionTextColor": "#7302060C"
+                                    },
+                                    "cta": {
+                                        "type": "OFFER_HALF_CARD"
+                                    }
+                                },
+                                {
+                                    "info": {
+                                        "header": "ITEMS AT ₹139",
+                                        "offerTag": "DEAL OF DAY",
+                                        "offerTagColor": "#E46D47",
+                                        "offerIds": [
+                                            "4a60a9c7-b7f5-4590-bfca-e12315768198"
+                                        ],
+                                        "expiryTime": "1970-01-01T07:38:37Z",
+                                        "description": "ON SELECT ITEMS |",
+                                        "offerType": "offers",
+                                        "restId": "643775",
+                                        "offerLogo": "offers/deal-of-day",
+                                        "descriptionTextColor": "#7302060C",
+                                        "showExpiryTimer": true
+                                    },
+                                    "cta": {
+                                        "type": "OFFER_HALF_CARD"
+                                    }
+                                },
+                                {
+                                    "info": {
+                                        "header": "50% OFF UPTO ₹100",
+                                        "offerTagColor": "#E46D47",
+                                        "offerIds": [
+                                            "10629a57-5d59-439c-87d0-f084909f5adf"
+                                        ],
+                                        "expiryTime": "1970-01-01T00:00:00Z",
+                                        "couponCode": "USE TRYNEW",
+                                        "description": "ABOVE ₹159",
+                                        "offerType": "offers",
+                                        "restId": "643775",
+                                        "offerLogo": "offers/generic",
+                                        "descriptionTextColor": "#7302060C"
+                                    },
+                                    "cta": {
+                                        "type": "OFFER_HALF_CARD"
+                                    }
+                                },
+                                {
+                                    "info": {
+                                        "header": "FLAT ₹125 OFF",
+                                        "offerTag": "FLAT DEAL",
+                                        "offerTagColor": "#E46D47",
+                                        "offerIds": [
+                                            "3b38a131-c6d3-4d7b-95cf-9b0b5e96389f"
+                                        ],
+                                        "expiryTime": "1970-01-01T00:00:00Z",
+                                        "couponCode": "USE FLATDEAL",
+                                        "description": "ABOVE ₹399",
+                                        "offerType": "offers",
+                                        "restId": "643775",
+                                        "offerLogo": "offers/generic",
+                                        "descriptionTextColor": "#7302060C"
+                                    },
+                                    "cta": {
+                                        "type": "OFFER_HALF_CARD"
+                                    }
+                                },
+                                {
+                                    "info": {
+                                        "header": "FLAT ₹150 OFF",
+                                        "offerTag": "FLAT DEAL",
+                                        "offerTagColor": "#E46D47",
+                                        "offerIds": [
+                                            "353cd1a5-63a6-4578-a952-4d8a15b5a492"
+                                        ],
+                                        "expiryTime": "1970-01-01T00:00:00Z",
+                                        "couponCode": "USE PAYDAYDEAL",
+                                        "description": "ABOVE ₹499",
+                                        "offerType": "offers",
+                                        "restId": "643775",
+                                        "offerLogo": "offers/generic",
+                                        "descriptionTextColor": "#7302060C"
+                                    },
+                                    "cta": {
+                                        "type": "OFFER_HALF_CARD"
+                                    }
+                                }
+                            ],
+                            "habitMilestoneInfo": {
+                                "callout": {}
+                            },
+                            "loyaltyDiscoverPresentationInfo": {
+                                "logoCtx": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "groupedCard": {
+                "cardGroupMap": {
+                    "REGULAR": {
+                        "cards": [
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                                        "badges": {},
+                                        "vegOnlyDetails": {
+                                            "imageId": "AutoVegOnly_qkjowj",
+                                            "title": "Showing only vegetarian options.",
+                                            "description": "Tap on the VEG ONLY button to turn off the setting"
+                                        },
+                                        "topRatedFilter": {
+                                            "attributes": {
+                                                "displayText": "Ratings 4.0+"
+                                            }
+                                        },
+                                        "kidsCategoryFilter": {
+                                            "attributes": {
+                                                "displayText": "Kids Favourites",
+                                                "tooltip": {
+                                                    "enabled": true,
+                                                    "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                                                }
+                                            }
+                                        },
+                                        "vegFilter": {
+                                            "attributes": {
+                                                "displayText": "VEG"
+                                            }
+                                        },
+                                        "nonvegFilter": {
+                                            "attributes": {
+                                                "displayText": "NONVEG"
+                                            }
+                                        }
+                                    },
+                                    "relevance": {
+                                        "type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                                        "sectionId": "MENU_FILTER_TOGGLE"
+                                    }
+                                }
+                            },
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuCarousel",
+                                        "title": "Top Picks",
+                                        "carousel": [
+                                            {
+                                                "type": "TopCarousel",
+                                                "subtype": "image",
+                                                "bannerId": "3239073",
+                                                "creativeId": "TopPicks/GPSdwich",
+                                                "title": "Grilled Paneer Power Sandwich [31g Protein]",
+                                                "description": " ",
+                                                "fontColor": "#FFFFFF",
+                                                "dish": {
+                                                    "info": {
+                                                        "id": "115866057",
+                                                        "name": "Grilled Paneer Power Sandwich [31g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Grilled Paneer | Thick Yoghurt Spread | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/c3a5b756-cd2a-492f-9659-d4a818c91b71_c7e8b87d-c7c7-4548-a32b-46eeb73e5a63.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 19900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "type": "TopCarousel",
+                                                "subtype": "image",
+                                                "bannerId": "3239951",
+                                                "creativeId": "TopPicks/HGCB",
+                                                "title": "Herb Grilled Chicken Boneless [75g Protein]",
+                                                "description": " ",
+                                                "fontColor": "#FFFFFF",
+                                                "dish": {
+                                                    "info": {
+                                                        "id": "113138516",
+                                                        "name": "Herb Grilled Chicken Boneless [75g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "Fresh chicken pieces rubbed in a herb & garlic glaze. Want something healthy & delicious?\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/e55cdb78-2972-4dd2-a79d-75889222878f_3254e6f0-82c0-4337-bf55-36bb52a14f99.jpg",
+                                                        "inStock": 1,
+                                                        "price": 28900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                        "title": "Recommended",
+                                        "itemCards": [
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866057",
+                                                        "name": "Grilled Paneer Power Sandwich [31g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Grilled Paneer | Thick Yoghurt Spread | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/c3a5b756-cd2a-492f-9659-d4a818c91b71_c7e8b87d-c7c7-4548-a32b-46eeb73e5a63.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 19900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "showImage": true,
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.7",
+                                                                "ratingCount": "30 ratings",
+                                                                "ratingCountV2": "30"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866061",
+                                                        "name": "Grilled Chicken Power Sandwich [42g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Grilled Chicken | Thick Yoghurt Spread | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/ada1accd-eba3-4d35-9e19-6ff73ad2b292_ebf2530d-0b2f-45ae-8572-0a011bc0fedd.jpg",
+                                                        "inStock": 1,
+                                                        "price": 19900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "showImage": true,
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.7",
+                                                                "ratingCount": "31 ratings",
+                                                                "ratingCountV2": "31"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866058",
+                                                        "name": "Overload Chicken Mighty Sandwich [55g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Double Portion Grilled Chicken | Olives + Jalapenos | Green Chutney | Thick Yoghurt Spread | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/18/0731738a-4bbb-47be-8c35-c5166b629bd8_4e1a8f5d-e8bc-43bc-bf90-804413aac290.jpg",
+                                                        "inStock": 1,
+                                                        "price": 25900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "showImage": true,
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.5",
+                                                                "ratingCount": "15 ratings",
+                                                                "ratingCountV2": "15"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            }
+                                        ],
+                                        "type": "CATEGORY_TYPE_RECOMMENDED"
+                                    }
+                                }
+                            },
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                        "title": "WeFit Multigrain Sandwiches",
+                                        "itemCards": [
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866055",
+                                                        "name": "Veggie Goodness Sandwich [15g Protein, 506 Kcal]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Capsicum + Tomato + Onion | Olives + Jalapenos | Thick Yoghurt Spread | Green Chutney | Multi-Grain Bread\n\n[High Protein, Low Calorie]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/18/488d186a-141b-4ee6-9291-c940b41a3155_3f487629-553e-4705-8423-753ca0f8256a.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 17900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "5.0",
+                                                                "ratingCount": "3 ratings",
+                                                                "ratingCountV2": "3"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866056",
+                                                        "name": "Mushroom Roast Sandwich [17g Protein, 518 Kcal]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Roast Mushrooms | Thick Yoghurt Spread | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Low Calorie]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/0bab000f-c32a-4824-b766-325353d5c518_fcd19b9e-b838-49cf-821e-1f1845e78937.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 19900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.6",
+                                                                "ratingCount": "11 ratings",
+                                                                "ratingCountV2": "11"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866057",
+                                                        "name": "Grilled Paneer Power Sandwich [31g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Grilled Paneer | Thick Yoghurt Spread | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/c3a5b756-cd2a-492f-9659-d4a818c91b71_c7e8b87d-c7c7-4548-a32b-46eeb73e5a63.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 19900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.7",
+                                                                "ratingCount": "30 ratings",
+                                                                "ratingCountV2": "30"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866059",
+                                                        "name": "Tikka Paneer Cheese Sandwich [33g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Paneer Tikka Roast | Extra Cheese | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/e60e9c8f-5baa-444c-8752-0c4d31205651_cf943e90-41f4-468e-a049-d94dd6f0913a.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 22900,
+                                                        "finalPrice": 15900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866060",
+                                                        "name": "Overload Paneer Mighty Sandwich [38g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Double Portion Grilled Paneer | Olives + Jalapenos | Green Chutney | Thick Yoghurt Spread | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/18/5be5ee0c-3568-4da1-84d4-2f6b26ff4df9_d0e8f95a-6300-451c-b8c8-2a79be08043a.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 25900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.8",
+                                                                "ratingCount": "6 ratings",
+                                                                "ratingCountV2": "6"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866061",
+                                                        "name": "Grilled Chicken Power Sandwich [42g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Grilled Chicken | Thick Yoghurt Spread | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/ada1accd-eba3-4d35-9e19-6ff73ad2b292_ebf2530d-0b2f-45ae-8572-0a011bc0fedd.jpg",
+                                                        "inStock": 1,
+                                                        "price": 19900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.7",
+                                                                "ratingCount": "31 ratings",
+                                                                "ratingCountV2": "31"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866062",
+                                                        "name": "Tikka Chicken Cheese Sandwich [44g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Chicken Tikka Roast | Extra Cheese | Green Chutney | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/ad25f768-a7e7-47b0-8e10-7c77d9f7cc44_2f75c0b6-41fe-4571-b103-c5ef6cca724e.jpg",
+                                                        "inStock": 1,
+                                                        "price": 22900,
+                                                        "finalPrice": 15900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.8",
+                                                                "ratingCount": "3 ratings",
+                                                                "ratingCountV2": "3"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "115866058",
+                                                        "name": "Overload Chicken Mighty Sandwich [55g Protein]",
+                                                        "category": "WeFit Multigrain Sandwiches",
+                                                        "description": "Double Portion Grilled Chicken | Olives + Jalapenos | Green Chutney | Thick Yoghurt Spread | Capsicum + Tomato + Onion | Multi-Grain Bread\n\n[High Protein, Grilled]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/18/0731738a-4bbb-47be-8c35-c5166b629bd8_4e1a8f5d-e8bc-43bc-bf90-804413aac290.jpg",
+                                                        "inStock": 1,
+                                                        "price": 25900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.5",
+                                                                "ratingCount": "15 ratings",
+                                                                "ratingCountV2": "15"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                        "title": "WeFit Grilled Protein",
+                                        "itemCards": [
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138479",
+                                                        "name": "Tandoori Grilled Paneer Tikka [54g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[10 Pcs] Soft paneer coated in a tandoori marinade. Indulge while getting your protein fix.\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/7b03aa2a-da96-4622-823b-ee75045a27ea_8fcd831d-4e90-4a5e-afb3-b3b5ad1ebe2b.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 22900,
+                                                        "finalPrice": 15900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "5.0",
+                                                                "ratingCount": "5 ratings",
+                                                                "ratingCountV2": "5"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138480",
+                                                        "name": "Peri Peri Grilled Paneer Tikka [54g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[10 Pcs] Proteinlicious paneer smothered in a spicy marinade. It's a treat minus the guilt!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/aca57c0d-c86c-48ef-b55c-5c92eb346565_df7c776b-34d0-4bd5-8b87-7c50fcb33f65.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 22900,
+                                                        "finalPrice": 15900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138511",
+                                                        "name": "Tandoori Grilled Chicken Wings [75g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[6 Pcs] Tender chicken wings in a smoky tandoori sauce. Full of flavours, not oil. It ain't fried!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/f017be0d-e1bf-4895-a0a8-f56ddf4955b6_67eee6ad-2703-4d5b-b304-3885ab59106c.jpg",
+                                                        "inStock": 1,
+                                                        "price": 21900,
+                                                        "finalPrice": 13900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138512",
+                                                        "name": "Peri Peri Grilled Chicken Wings [75g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[6 Pcs] A peri peri good zing to your fave chicken wings. No frying, no guilt-crying!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/2fb4d1a0-2332-438d-924e-7a847dff7678_d202bfb1-9b13-4a10-b04d-63d8a4608951.jpg",
+                                                        "inStock": 1,
+                                                        "price": 21900,
+                                                        "finalPrice": 13900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "3.7",
+                                                                "ratingCount": "3 ratings",
+                                                                "ratingCountV2": "3"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138509",
+                                                        "name": "Herb Grilled Chicken Wings [74g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[6 Pcs] Chicken wings tossed in a sauce of herbs, garlic & pepper. It's grilled, not fried!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/a45d81dc-9a0c-4cad-bc2a-5dc2fb944660_be010817-99d7-4d5b-a740-c4fe6b835b3f.jpg",
+                                                        "inStock": 1,
+                                                        "price": 21900,
+                                                        "finalPrice": 13900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "5.0",
+                                                                "ratingCount": "6 ratings",
+                                                                "ratingCountV2": "6"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138510",
+                                                        "name": "BBQ Grilled Chicken Wings [74g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[6 Pcs] Soft, juicy chicken in a tangy, smoky bbq sauce. Not fried. Not meant to be resisted!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/7ae98d32-8588-48b8-9974-d0bc6d0c7fbc_fd0375b4-4deb-43cb-9236-ea63430977fe.jpg",
+                                                        "inStock": 1,
+                                                        "price": 21900,
+                                                        "finalPrice": 13900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {
+                                                            "text": "Bestseller",
+                                                            "textColor": "#ffffff",
+                                                            "topBackgroundColor": "#d53d4c",
+                                                            "bottomBackgroundColor": "#b02331"
+                                                        },
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isBestseller": true,
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "4.3",
+                                                                "ratingCount": "5 ratings",
+                                                                "ratingCountV2": "5"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138514",
+                                                        "name": "Tandoori Grilled Chicken Tangdi [55g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[2 Pcs] Succulent chicken drumsticks in tandoori marinade. This savoury grilled protein is a fan favourite!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/17/ebf05059-d2d2-4409-a94c-9d7c7f61cacd_7c9aed0c-f189-43e8-be05-6c80ae602cdd.jpg",
+                                                        "inStock": 1,
+                                                        "price": 24900,
+                                                        "finalPrice": 15900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138515",
+                                                        "name": "Peri Peri Grilled Chicken Tangdi [55g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[2 Pcs] Tender & juicy chicken drumsticks in peri peri marinade. Time to up your protein intake?\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/17/028187d7-87e1-4eb3-ab3b-6ec269986351_c7d9f72a-419b-4a33-85c6-6186a2c50d40.jpg",
+                                                        "inStock": 1,
+                                                        "price": 24900,
+                                                        "finalPrice": 15900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138513",
+                                                        "name": "Herb Grilled Chicken Tangdi [54g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "[2 Pcs] Chicken drumsticks rubbed in a mix of herbs, garlic & pepper. Name a more fun way to have your protein!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/17/9914f0f3-52c8-4746-b7f5-8d2fc98642b4_0b5e201d-9958-4e2e-a15a-ffc460b11dd7.jpg",
+                                                        "inStock": 1,
+                                                        "price": 24900,
+                                                        "finalPrice": 15900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "offerTags": [
+                                                            {}
+                                                        ],
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "itemNudgeType": "FinalPrice",
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138477",
+                                                        "name": "Tandoori Grilled Chicken Tikka [75g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "The OG tikka, we all love! Tender chicken in a classic tandoori marinade.\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/5777e792-a050-45cc-a260-69e9ab6d8f4a_8a678d1a-97ed-4a29-a75d-9da1fb8aad6e.jpg",
+                                                        "inStock": 1,
+                                                        "price": 28900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "2.7",
+                                                                "ratingCount": "3 ratings",
+                                                                "ratingCountV2": "3"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138478",
+                                                        "name": "Peri Peri Grilled Chicken Boneless [75g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "Chicken chunks in a hot sauce. This protein packed starter is peri peri tempting!\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/1ac63a4b-de98-4c19-8f23-3526dc628868_210e8620-cc22-457d-b1ad-835493befd53.jpg",
+                                                        "inStock": 1,
+                                                        "price": 28900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138516",
+                                                        "name": "Herb Grilled Chicken Boneless [75g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "Fresh chicken pieces rubbed in a herb & garlic glaze. Want something healthy & delicious?\n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/e55cdb78-2972-4dd2-a79d-75889222878f_3254e6f0-82c0-4337-bf55-36bb52a14f99.jpg",
+                                                        "inStock": 1,
+                                                        "price": 28900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "3.9",
+                                                                "ratingCount": "6 ratings",
+                                                                "ratingCountV2": "6"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138517",
+                                                        "name": "BBQ Grilled Chicken Boneless [74g Protein]",
+                                                        "category": "WeFit Grilled Protein",
+                                                        "description": "Chicken in a hot, sweet & tangy BBQ sauce. Lean protein made irresistible! \n\n[Grilled, High Protein, Gluten Free]",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/8a809ac2-a614-4cda-be72-6cf68c120089_72e74f40-c2cc-4b85-af7c-9e60bee058cf.jpg",
+                                                        "inStock": 1,
+                                                        "price": 28900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "NONVEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "isGuiltfree": true,
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                        "title": "Drinks",
+                                        "itemCards": [
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "113138485",
+                                                        "name": "Fresh Lemonade",
+                                                        "category": "Drinks",
+                                                        "description": "A tangy lemony side drink for your meals.",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/0bee06aa-ab4d-4b55-acdb-8d7ad2b9ad5b_69e11a65-305f-4cbd-aa55-23bc39555fb3.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 2900,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "ratings": {
+                                                            "aggregatedRating": {
+                                                                "rating": "3.7",
+                                                                "ratingCount": "13 ratings",
+                                                                "ratingCountV2": "13"
+                                                            }
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            },
+                                            {
+                                                "card": {
+                                                    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                    "info": {
+                                                        "id": "130045129",
+                                                        "name": "Bisleri Bliss - Mineral Water [500 ml]",
+                                                        "category": "Drinks",
+                                                        "description": "Drink water, stay hydrated!",
+                                                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/16/3e8d2d76-bdeb-4201-af89-00db2e6a0968_38a8566c-6fd0-4344-bf1e-6d44e0bf9a23.jpg",
+                                                        "inStock": 1,
+                                                        "isVeg": 1,
+                                                        "price": 2000,
+                                                        "variants": {},
+                                                        "variantsV2": {},
+                                                        "itemAttribute": {
+                                                            "vegClassifier": "VEG"
+                                                        },
+                                                        "ribbon": {},
+                                                        "type": "ITEM",
+                                                        "itemBadge": {},
+                                                        "badgesV2": {},
+                                                        "ratings": {
+                                                            "aggregatedRating": {}
+                                                        },
+                                                        "itemPriceStrikeOff": true
+                                                    },
+                                                    "analytics": {},
+                                                    "hideRestaurantDetails": true
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                                        "type": "FSSAI",
+                                        "imageId": "fssai_final_edss9i",
+                                        "text": [
+                                            "License No. 11221332000820"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "card": {
+                                    "card": {
+                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                                        "name": "WeFit - Protein Bowls, Salads & Sandwiches",
+                                        "area": "South Extension",
+                                        "completeAddress": "PT Gera First Floor, Unit No 14, Opposite Axis,Bank, Bund Garden, Pune , Dhole Patil Road,Pune PMC, Maharashtra-411001"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "firstOffsetRequest": true,
+    "isQCLink": false
+}
