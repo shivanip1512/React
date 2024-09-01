@@ -194,7 +194,7 @@ const config = {
   // Whether to use watchman for file crawling
   // watchman: true,
    moduleNameMapper: {
-    '\\.(png|jpg|jpeg|gif)$': '<rootDir>/__mocks__/fileMock.js',
+    '\\.(png|jpg|jpeg|gif)$': '<rootDir>/FoodDeliveryApp/__mocks__/fileMock.js',
   },
 };
 
