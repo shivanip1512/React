@@ -34,7 +34,6 @@ export const CartItem = ({ data }) => {
   };
 
   const handleAddFavourite = (item) => {
-    console.log(favItems, item);
     const itemNotInFavs = favItems.findIndex(i => i.id === item.id) === -1;
     if(itemNotInFavs)
       dispatch(addItem(item));

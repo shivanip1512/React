@@ -19,15 +19,18 @@ const Body = () => {
     const {loggedInUser, setUserName} = useContext(UserContext);
     
     useEffect(() => {
+        console.log("process.env.NODE_ENV :",process.env.NODE_ENV)
         if (process.env.NODE_ENV === 'production') {
             fetchData();
         }
         else {
             setListOfRestaurant(mockData);
+            console.log(listOfRestaurant);
         }
     }, []);
     
     const fetchData = async () => {
+        console.log("inside fetchData");
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         //optional chaining
@@ -42,7 +45,6 @@ const Body = () => {
         return (
             <h1>Looks like you are offline!! Please check your internet connection.</h1>
         );
-
     // Conditional rendering
     return listOfRestaurant.length === 0 ? <Shimmer /> :
         (
@@ -63,7 +65,7 @@ const Body = () => {
                         <button className="bg-green-100 px-4 py-1 m-4 rounded-md" onClick={
                             () => {
                                 //filter restaurant cards and update UI
-                                const searchFilter = restaurantData.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                                const searchFilter = listOfRestaurant.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                                 setListOfRestaurant(searchFilter);
                             }
                         }>Search</button>
